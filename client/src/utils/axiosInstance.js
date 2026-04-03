@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_SERVER_URL,
+  baseURL: import.meta.env.VITE_SERVER_URL || "https://to-do-list-api-seven.vercel.app/api",
+  withCredentials: true,
 });
 
 axiosInstance.interceptors.request.use(
