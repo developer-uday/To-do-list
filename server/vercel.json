@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "src": "/api/(.*)", "dest": "https://to-do-list-api-seven.vercel.app/api/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
