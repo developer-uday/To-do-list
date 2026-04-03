@@ -1,4 +1,3 @@
-dotenv.config();
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
@@ -10,6 +9,8 @@ import userRouter from './routes/user.route.js';
 import uploadRouter from './routes/upload.route.js';
 
 // Load environment variables
+dotenv.config();
+
 const app = express();
 
 // Middlewares
